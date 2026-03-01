@@ -1,4 +1,4 @@
-# 📚 MiInstitutoApp
+# MiInstitutoApp
 
 MiInstitutoApp, is a mobile application developed in **Kotlin** using the **Android Studio** framework.
 The app is designed to improve communication and organization between teachers and students in an educational environment.
