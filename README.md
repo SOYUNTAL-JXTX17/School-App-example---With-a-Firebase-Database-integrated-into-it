@@ -83,15 +83,6 @@ The main goal of MiInstitutoApp is to:
 
 ---
 
-## Future Improvements
-
-* Push notifications
-* Role-based permissions (admin, teacher, student)
-* Cloud database integration
-* UI/UX enhancements
-
----
-
 ## Contribution
 
 Contributions are welcome!
