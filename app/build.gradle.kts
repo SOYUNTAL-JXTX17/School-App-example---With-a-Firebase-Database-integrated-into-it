@@ -47,7 +47,6 @@ dependencies {
     implementation("com.google.firebase:firebase-database-ktx:21.0.0")
 
     implementation("com.github.bumptech.glide:glide:4.16.0")
-    implementation("com.squareup.okhttp3:okhttp:4.12.0")
 
     // Otros
     implementation(libs.androidx.core.ktx)
@@ -74,7 +73,6 @@ dependencies {
     implementation(libs.androidx.navigation3.runtime)
     implementation(libs.filament.android)
     implementation(libs.androidx.databinding.runtime)
-    implementation(libs.firebase.auth)
     implementation(libs.androidx.credentials)
     implementation(libs.androidx.credentials.play.services.auth)
     implementation(libs.googleid)
