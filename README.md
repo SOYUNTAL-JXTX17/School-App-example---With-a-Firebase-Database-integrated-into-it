@@ -83,13 +83,6 @@ The main goal of MiInstitutoApp is to:
 
 ---
 
-## Contribution
-
-Contributions are welcome!
-Feel free to fork the repository, open issues, or submit pull requests.
-
----
-
 ## Dependencies
 * buid-gradle.kts (app)
 ```bash
@@ -98,6 +91,13 @@ implementation(libs.firebase.auth)
 implementation("com.google.firebase:firebase-database-ktx:21.0.0")
 implementation("com.github.bumptech.glide:glide:4.16.0")
 ```
+
+---
+
+## Contribution
+
+Contributions are welcome!
+Feel free to fork the repository, open issues, or submit pull requests.
 
 ---
 
