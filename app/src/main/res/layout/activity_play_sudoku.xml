@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:paddingHorizontal="32dp"
     android:paddingVertical="32dp"
-    tools:context="com.example.albasurgames.juegosApartado.juegos.sudoku.PlaySudokuActivity">
+    tools:context="miinstitutoapp.juegosApartado.juegos.sudoku.PlaySudokuActivity">
 
 
     <LinearLayout
@@ -71,7 +71,7 @@
 
 
 
-    <com.example.albasurgames.juegosApartado.juegos.sudoku.SudokuBoardView
+    <miinstitutoapp.juegosApartado.juegos.sudoku.SudokuBoardView
         android:id="@+id/sudokuBoardView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

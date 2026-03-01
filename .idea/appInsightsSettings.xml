@@ -8,7 +8,7 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="com.example.albasurgames" />
+                  <option name="appId" value="com.example.miinstitutoapp" />
                   <option name="mobileSdkAppId" value="1:702639944975:android:3dce6308f4e8c09ff53a7a" />
                   <option name="projectId" value="joseabarberapp" />
                   <option name="projectNumber" value="702639944975" />

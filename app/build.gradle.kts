@@ -5,13 +5,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.albasurgames"
+    namespace = "com.example.miinstitutoapp"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.example.albasurgames"
+        applicationId = "com.example.miinstitutoapp"
         minSdk = 23
         targetSdk = 36
         versionCode = 1
