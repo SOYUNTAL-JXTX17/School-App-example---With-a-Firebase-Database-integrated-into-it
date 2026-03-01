@@ -5,7 +5,7 @@ The app is designed to improve communication and organization between teachers a
 
 ## Overview
 
-EduConnect aims to digitize and simplify key aspects of academic interaction by providing:
+MiInstitutoApp aims to digitize and simplify key aspects of academic interaction by providing:
 
 * **Real-time communication**
 * **Cognitive stimulation through mini-games**
@@ -47,7 +47,7 @@ The platform creates a centralized digital space where teachers and students can
 
 ## Purpose
 
-The main goal of EduConnect is to:
+The main goal of MiInstitutoApp is to:
 
 * Enhance teacher–student communication
 * Promote cognitive development through interactive activities
