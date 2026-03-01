@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".juegosApartado.lista.ListaJuegosActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center|bottom"
+        android:background="@drawable/inicio_bienvenida_background"
+        android:layout_marginBottom="20dp"
+        android:paddingBottom="20dp"
+        android:paddingHorizontal="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "Juegos"
+                    android:textAllCaps="true"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textColor="?attr/textos"
+                    android:textAlignment="textStart"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    app:cardBackgroundColor="@color/Gray"
+                    app:cardCornerRadius="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp">
+
+                            <TextView
+                                android:id="@+id/monedas"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="999k"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/seg_ui_semibold"
+                                android:textColor="@color/white"
+                                android:textSize="17sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                app:cardCornerRadius="16dp"
+                                app:cardBackgroundColor="@color/green">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/moneda_icon"
+                                    android:tint="@color/white"
+                                    android:padding="3dp"/>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:rowCount="2"
+                android:alignmentMode="alignMargins">
+
+                <!-- CARD 1 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="230dp"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/teal_700"
+                    app:cardCornerRadius="12dp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/juegoMemoria"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="8"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/memorygamelogo"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:text="Memoriza los colores"
+                            android:fontFamily="@font/seg_ui_semibold"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.cardview.widget.CardView>
+
+                <!-- CARD 2 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="230dp"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="12dp"
+                    android:backgroundTint="@color/purple_200">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/juegoPuzle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/puzlelogo"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="Puzles"
+                            android:fontFamily="@font/seg_ui_semibold"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.cardview.widget.CardView>
+
+                <!-- CARD 3 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="230dp"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="12dp"
+                    android:backgroundTint="@color/Crimson">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/juegoSudoku"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/sudokulogo"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="Sudoku"
+                            android:fontFamily="@font/seg_ui_semibold"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.cardview.widget.CardView>
+
+
+            </GridLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/inicio_navbar_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="32dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/inicioButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:layout_marginBottom="-5dp"
+                    android:src="@drawable/logoapp_imagen_blanconegro"
+                    android:tint="?attr/textos" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Inicio"
+                    android:textColor="?attr/textos"
+                    android:fontFamily="@font/segoe_ui_regular"
+                    android:textAlignment="center"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/jugarButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:tint="@color/Orange"
+                    android:src="@drawable/juegos_icon"
+                    android:layout_marginBottom="-5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Juegos"
+                    android:textColor="?attr/textos"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textAlignment="center"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/actividadesButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:tint="?attr/textos"
+                    android:src="@drawable/actividades_icon"
+                    android:layout_marginBottom="-5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Actividades"
+                    android:textColor="?attr/textos"
+                    android:fontFamily="@font/segoe_ui_regular"
+                    android:textAlignment="center"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

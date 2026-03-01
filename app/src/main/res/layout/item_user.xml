@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="?attr/colorBackgroundBienvenida"
+    app:cardCornerRadius="30dp">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tvUserName"
+        android:padding="16dp"
+        android:textColor="?attr/fondoBotones"
+        android:textSize="15sp"
+        android:fontFamily="@font/seg_ui_semibold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="32dp"
+    android:paddingVertical="32dp"
+    tools:context="com.example.albasurgames.juegosApartado.juegos.sudoku.PlaySudokuActivity">
+
+
+    <LinearLayout
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tint="?attr/backButton"
+            android:src="@drawable/arrow_back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTituloJuegoSudoku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUDOKU"
+            android:textAllCaps="true"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:textColor="?attr/textos"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutObjetivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="end">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OBJETIVO"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:textColor="?attr/textos"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/seg_ui_semibold"
+            android:text="Rellenar una cuadrícula de 9x9 con números del 1 al 9, asegurándote de que cada número no se repita en su fila, su columna ni en los bloques de 3x3."
+            android:textColor="?attr/textos"
+            android:textAlignment="textEnd"
+            android:justificationMode="inter_word"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+
+    <com.example.albasurgames.juegosApartado.juegos.sudoku.SudokuBoardView
+        android:id="@+id/sudokuBoardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layoutObjetivo" />
+
+    <GridLayout
+        android:id="@+id/buttonsLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:columnCount="2"
+        android:rowCount="1"
+        android:layout_above="@id/buttonsLayout1">
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginEnd="20dp"
+            app:srcCompat="@drawable/delete_black"
+            android:background="?attr/fondoBotones"
+            app:tint="?attr/textoBotones"/>
+
+        <ImageButton
+            android:id="@+id/notesButton"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="1"
+            app:srcCompat="@drawable/edit_pen_black"
+            android:background="?attr/fondoBotones"
+            app:tint="?attr/textoBotones" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/buttonsLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:columnCount="9"
+        android:rowCount="1">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/oneButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="4dp"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="1"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="?attr/fondoBotones"
+            android:textColor="?attr/textoBotones"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/twoButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="4dp"
+            android:layout_marginLeft="2dp"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="2"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="?attr/fondoBotones"
+            android:textColor="?attr/textoBotones"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/threeButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="4dp"
+            android:layout_marginLeft="2dp"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:text="3"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="?attr/fondoBotones"
+            android:textColor="?attr/textoBotones"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fourButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="4dp"
+            android:layout_marginLeft="2dp"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:text="4"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="?attr/fondoBotones"
+            android:textColor="?attr/textoBotones"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fiveButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="4dp"
+            android:layout_marginLeft="2dp"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:text="5"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="?attr/fondoBotones"
+            android:textColor="?attr/textoBotones"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sixButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="4dp"
+            android:layout_marginLeft="2dp"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_column="5"
+            android:text="6"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="?attr/fondoBotones"
+            android:textColor="?attr/textoBotones"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sevenButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="4dp"
+            android:layout_marginLeft="2dp"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_column="6"
+            android:text="7"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="?attr/fondoBotones"
+            android:textColor="?attr/textoBotones"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/eightButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="4dp"
+            android:layout_marginLeft="2dp"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:text="8"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="?attr/fondoBotones"
+            android:textColor="?attr/textoBotones"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nineButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="4dp"
+            android:layout_marginLeft="2dp"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_column="8"
+            android:text="9"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="?attr/fondoBotones"
+            android:textColor="?attr/textoBotones"/>
+    </GridLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AlbasurGames.ActivityFullscreenNoCutout" parent="Theme.Material3.Light.NoActionBar">
+
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green</item> <!-- Fondo de botones -->
+        <item name="colorPrimaryVariant">?attr/colorBackgroundBienvenida</item>
+        <item name="colorOnPrimary">@color/black</item> <!-- Texto -->
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/green</item>
+        <item name="colorSecondaryVariant">@color/fondo_principal</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Navigation bar color -->
+        <item name="android:navigationBarColor">@color/black</item>
+
+        <item name="colorSurface">@color/black</item>
+        <item name="colorOnSurface">@color/black</item>
+
+        <item name="backButton">@color/black</item>
+
+        <item name="textos">@color/black</item>
+
+        <item name="fondoBotones">@color/black</item>
+
+        <item name="textoBotones">@color/white</item>
+
+        <item name="inputLogin">@color/colorEditText</item>
+
+        <item name="loginBackground1">@color/Orange</item>
+
+        <item name="loginBackground2">@color/white</item>
+
+        <item name="textoLogin1">@color/white</item>
+
+        <item name="colorBackgroundBienvenida">@color/LightGrey</item>
+
+        <item name="colorBackgroundNoticias">@color/Lavender</item>
+
+        <item name="colorBackgroundChat">@color/GhostWhite</item>
+    </style>
+
+    <style name="Theme.AlbasurGames.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/animated_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.AlbasurGames.ActivityFullscreenNoCutout</item>
+        <item name="android:windowSplashScreenBrandingImage">@drawable/logoapp_imagen</item>
+        <item name="windowSplashScreenBackground">@color/Lime</item>
+    </style>
+</resources>

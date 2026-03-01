@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "702639944975",
+    "firebase_url": "https://joseabarberapp-default-rtdb.firebaseio.com",
+    "project_id": "joseabarberapp",
+    "storage_bucket": "joseabarberapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702639944975:android:3dce6308f4e8c09ff53a7a",
+        "android_client_info": {
+          "package_name": "com.example.albasurgames"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgm1j3YxHYR886V8cJ85PSB8RVSWfu3PA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

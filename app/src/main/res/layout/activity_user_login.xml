@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/loginBackground1"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context=".sesionApartado.UserLoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/seg_ui_semibold"
+                android:text="App creada por: SOYUNTAL-JXTX17 "
+                android:textColor="?attr/textoLogin1"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:textSize="13dp" />
+            <TextView
+                android:id="@+id/githubLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/seg_ui_semibold"
+                android:text="Click aqui para visitar mi Github "
+                android:textColor="@color/Cyan"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:text="Bienvenido"
+                android:textColor="?attr/textoLogin1"
+                android:textSize="36dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/seg_ui_semibold"
+                android:text="Inicia sesion para comenzar"
+                android:textColor="?attr/textoLogin1"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@drawable/card_background"
+        android:elevation="36dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/seg_ui_semibold"
+            android:text="INICIAR SESION"
+            android:textColor="?attr/fondoBotones"
+            android:textSize="26dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/correoInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableEnd="@drawable/user_icon"
+                android:drawableTint="@color/colorTextBlack"
+                android:fontFamily="@font/seg_ui_semibold"
+                android:hint="Correo electrónico"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/colorTextBlack"
+                android:textColorHint="@color/colorPlaceholder" />
+
+            <EditText
+                android:id="@+id/contrasenaInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableEnd="@drawable/lock_icon"
+                android:drawableTint="@color/colorTextBlack"
+                android:fontFamily="@font/seg_ui_semibold"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/colorTextBlack"
+                android:textColorHint="@color/colorPlaceholder" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="18dp"
+                android:buttonTint="?attr/fondoBotones"
+                android:fontFamily="@font/seg_ui_semibold"
+                android:text="Recuerdame"
+                android:textColor="?attr/fondoBotones"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="48dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/seg_ui_semibold"
+                    android:text="Necesitas ayuda?"
+                    android:textColor="?attr/fondoBotones"
+                    android:textSize="18dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/accessButton"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:fontFamily="@font/seg_ui_semibold"
+                    android:text="Acceder"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorButtonText"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="46dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/seg_ui_semibold"
+                android:text="No tienes una cuenta?"
+                android:textColor="?attr/fondoBotones"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/registrarse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:text="Registrarse"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

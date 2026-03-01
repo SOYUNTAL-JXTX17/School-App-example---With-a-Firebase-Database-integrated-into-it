@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".inicioApartado.InicioActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center|bottom"
+        android:background="@drawable/inicio_bienvenida_background"
+        android:paddingBottom="20dp"
+        android:paddingHorizontal="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "Hola, "
+                    android:textSize="20sp"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textColor="?attr/textos"
+                    android:textAlignment="textStart"/>
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:text= "Usuario"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textColor="?attr/textos"
+                    android:textAlignment="textStart"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/mensajesButton"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:tint="?attr/textos"
+                    android:src="@drawable/mensajes_icon"/>
+
+                <ImageView
+                    android:id="@+id/ajustesButton"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:tint="?attr/textos"
+                    android:src="@drawable/settings_icon"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/seccionNoticias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/seg_ui_semibold"
+                        android:text="Noticias"
+                        android:textColor="?attr/textos"
+                        android:textSize="17sp"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                app:cardCornerRadius="16dp"
+                                app:cardBackgroundColor="?attr/colorBackgroundNoticias"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:padding="10dp"
+                                    android:src="@drawable/logoapp_imagen"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center_vertical|bottom"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/seg_ui_semibold"
+                                        android:text="Titulo de la noticia"
+                                        android:textColor="?attr/textos"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/segoe_ui_regular"
+                                        android:text="Descripcion de la noticia"
+                                        android:textColor="?attr/textos"
+                                        android:textSize="13sp" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                app:cardCornerRadius="16dp"
+                                app:cardBackgroundColor="?attr/colorBackgroundNoticias"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:padding="10dp"
+                                    android:src="@drawable/logoapp_imagen"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center_vertical|bottom"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/seg_ui_semibold"
+                                        android:text="Titulo de la noticia"
+                                        android:textColor="?attr/textos"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/segoe_ui_regular"
+                                        android:text="Descripcion de la noticia"
+                                        android:textColor="?attr/textos"
+                                        android:textSize="13sp" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                app:cardCornerRadius="16dp"
+                                app:cardBackgroundColor="?attr/colorBackgroundNoticias"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:padding="10dp"
+                                    android:src="@drawable/logoapp_imagen"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center_vertical|bottom"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/seg_ui_semibold"
+                                        android:text="Titulo de la noticia"
+                                        android:textColor="?attr/textos"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/segoe_ui_regular"
+                                        android:text="Descripcion de la noticia"
+                                        android:textColor="?attr/textos"
+                                        android:textSize="13sp" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                app:cardCornerRadius="16dp"
+                                app:cardBackgroundColor="?attr/colorBackgroundNoticias"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:padding="10dp"
+                                    android:src="@drawable/logoapp_imagen"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center_vertical|bottom"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/seg_ui_semibold"
+                                        android:text="Titulo de la noticia"
+                                        android:textColor="?attr/textos"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/segoe_ui_regular"
+                                        android:text="Descripcion de la noticia"
+                                        android:textColor="?attr/textos"
+                                        android:textSize="13sp" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/seccionContacto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/seg_ui_semibold"
+                        android:text="Contactanos"
+                        android:textColor="?attr/textos"
+                        android:textSize="17sp"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        app:cardCornerRadius="16dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp"
+                        app:cardBackgroundColor="?attr/colorBackgroundNoticias">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/telefono_icon"
+                                android:layout_marginLeft="15dp"
+                                android:tint="?attr/textos"
+                                android:layout_weight="1"/>
+
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:orientation="vertical"
+                                android:paddingLeft="10dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/seg_ui_semibold"
+                                    android:text="Numeros de telefono"
+                                    android:textColor="?attr/textos"
+                                    android:textSize="20sp" />
+
+                                <GridLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:rowCount="4"
+                                    android:columnCount="2"
+                                    android:paddingLeft="10dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/seg_ui_semibold"
+                                        android:text="Centro escolar"
+                                        android:layout_columnSpan="2"
+                                        android:textColor="?attr/textos"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/cvTelefono1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/seg_ui_semibold"
+                                        android:text="111 111 111 / "
+                                        android:textColor="@color/Orange"
+                                        android:textSize="13sp"/>
+
+                                    <TextView
+                                        android:id="@+id/cvTelefono2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/seg_ui_semibold"
+                                        android:text="222 22 22 22"
+                                        android:textColor="@color/Orange"
+                                        android:textSize="13sp"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/seg_ui_semibold"
+                                        android:text="Junta de Andalucía"
+                                        android:layout_columnSpan="2"
+                                        android:textColor="?attr/textos"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/cvTelefono3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/seg_ui_semibold"
+                                        android:text="333 33 33 33 / "
+                                        android:textColor="@color/Orange"
+                                        android:textSize="13sp"/>
+
+                                    <TextView
+                                        android:id="@+id/cvTelefono4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/seg_ui_semibold"
+                                        android:text="444 44 44 44"
+                                        android:textColor="@color/Orange"
+                                        android:textSize="13sp"/>
+                                </GridLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvPaginaweb"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        app:cardCornerRadius="16dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="15dp"
+                        app:cardBackgroundColor="?attr/colorBackgroundNoticias">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/web_icon"
+                                android:tint="?attr/textos"
+                                android:layout_marginStart="15dp"
+                                android:layout_weight="1"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:fontFamily="@font/seg_ui_semibold"
+                                android:text="Pagina web"
+                                android:textColor="?attr/textos"
+                                android:textSize="20sp"
+                                android:gravity="left"
+                                android:paddingLeft="10dp"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/seccionEventos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/seg_ui_semibold"
+                        android:text="Eventos"
+                        android:textColor="?attr/textos"
+                        android:textSize="17sp"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"/>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/contenedorEventos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/inicio_navbar_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="32dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/inicioButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:src="@drawable/logoapp_seleccionado"
+                    android:layout_marginBottom="-5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Inicio"
+                    android:textColor="?attr/textos"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textAlignment="center"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/jugarButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:tint="?attr/textos"
+                    android:src="@drawable/juegos_icon"
+                    android:layout_marginBottom="-5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Juegos"
+                    android:textColor="?attr/textos"
+                    android:fontFamily="@font/segoe_ui_regular"
+                    android:textAlignment="center"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/actividadesButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:tint="?attr/textos"
+                    android:src="@drawable/actividades_icon"
+                    android:layout_marginBottom="-5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Actividades"
+                    android:textColor="?attr/textos"
+                    android:fontFamily="@font/segoe_ui_regular"
+                    android:textAlignment="center"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

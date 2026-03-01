@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".actividadesApartado.ActividadesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/inicio_bienvenida_background"
+            android:layout_marginBottom="20dp"
+            android:paddingHorizontal="32dp"
+            android:paddingBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom">
+
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_back"
+                    android:tint="?attr/textos"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text= "Mensajes"
+                android:gravity="bottom"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:textColor="?attr/textos"
+                android:textAlignment="center"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlMensajes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerUsers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/inicio_navbar_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="32dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/inicioButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:src="@drawable/logoapp_imagen_blanconegro"
+                    android:layout_marginBottom="-5dp"
+                    android:tint="?attr/textos"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Inicio"
+                    android:textColor="?attr/textos"
+                    android:fontFamily="@font/segoe_ui_regular"
+                    android:textAlignment="center"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/jugarButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:tint="?attr/textos"
+                    android:src="@drawable/juegos_icon"
+                    android:layout_marginBottom="-5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Juegos"
+                    android:textColor="?attr/textos"
+                    android:fontFamily="@font/segoe_ui_regular"
+                    android:textAlignment="center"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/actividadesButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:tint="?attr/textos"
+                    android:src="@drawable/actividades_icon"
+                    android:layout_marginBottom="-5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Actividades"
+                    android:textColor="?attr/textos"
+                    android:fontFamily="@font/segoe_ui_regular"
+                    android:textAlignment="center"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".actividadesApartado.ActividadesActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center|bottom"
+        android:background="@drawable/inicio_bienvenida_background"
+        android:paddingHorizontal="32dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text= "Actividades"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:textColor="?attr/textos"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listaEventos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hacerEvento"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="100dp"
+            app:cardBackgroundColor="@color/Orange"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="40sp"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/inicio_navbar_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="32dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/inicioButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:src="@drawable/logoapp_imagen_blanconegro"
+                    android:tint="?attr/textos"
+                    android:layout_marginBottom="-5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Inicio"
+                    android:textColor="?attr/textos"
+                    android:fontFamily="@font/segoe_ui_regular"
+                    android:textAlignment="center"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/jugarButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:tint="?attr/textos"
+                    android:src="@drawable/juegos_icon"
+                    android:layout_marginBottom="-5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Juegos"
+                    android:textColor="?attr/textos"
+                    android:fontFamily="@font/segoe_ui_regular"
+                    android:textAlignment="center"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/actividadesButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:tint="@color/Orange"
+                    android:src="@drawable/actividades_icon"
+                    android:layout_marginBottom="-5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Actividades"
+                    android:textColor="?attr/textos"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textAlignment="center"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

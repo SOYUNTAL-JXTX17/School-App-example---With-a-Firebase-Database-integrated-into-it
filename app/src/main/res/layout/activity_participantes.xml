@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".actividadesApartado.ParticipantesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/inicio_bienvenida_background"
+            android:layout_marginBottom="20dp"
+            android:paddingHorizontal="32dp"
+            android:paddingBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom">
+
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_back"
+                    android:tint="?attr/textos"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvNombreEvento"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:text= "NombreEvento"
+                android:gravity="bottom"
+                android:textSize="20sp"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:textColor="?attr/textos"
+                android:textAlignment="center"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaParticipantes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

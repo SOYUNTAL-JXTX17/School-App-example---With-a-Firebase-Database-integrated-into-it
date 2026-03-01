@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="backButton" format="color|reference" />
+    <attr name="textos" format="color|reference" />
+    <attr name="fondoBotones" format="color|reference" />
+    <attr name="textoBotones" format="color|reference" />
+    <attr name="inputLogin" format="color|reference" />
+    <attr name="loginBackground1" format="color|reference" />
+    <attr name="loginBackground2" format="color|reference" />"
+    <attr name="textoLogin1" format="color|reference" />
+    <attr name="colorBackgroundBienvenida" format="color|reference" />
+    <attr name="colorBackgroundNoticias" format="color|reference" />
+    <attr name="colorBackgroundChat" format="color|reference" />
+</resources>

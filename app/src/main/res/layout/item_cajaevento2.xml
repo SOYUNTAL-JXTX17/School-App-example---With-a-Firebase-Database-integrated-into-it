@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:tag="evento1"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardBackgroundColor="@color/Lavender">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/tituloEvento"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    tools:text="HOLA"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoe_ui_regular"/>
+
+                <TextView
+                    android:id="@+id/fechaEvento"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    tools:text="17/07/2006"
+                    android:textSize="15sp"
+                    android:textAlignment="textEnd"
+                    android:fontFamily="@font/segoe_ui_regular"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/fecha_icon"
+                    android:layout_marginStart="5dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/borrarEvento"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:cardCornerRadius="100dp"
+                    app:cardBackgroundColor="@color/red"
+                    android:layout_marginLeft="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="X"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="20sp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/segoe_ui_regular" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/descripcionEvento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    tools:text="adios"
+                    android:textSize="12dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/segoe_ui_regular" />
+            </ScrollView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgEvento"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/participantesEvento"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/black">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/maxpersonas_icon"
+                        android:tint="@color/white"
+                        android:layout_marginRight="6dp"/>
+
+                    <TextView
+                        android:id="@+id/numpersonasEvento"
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        tools:text="7"
+                        android:textAlignment="textEnd"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/segoe_ui_regular" />
+
+                    <TextView
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="/"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/segoe_ui_regular" />
+
+                    <TextView
+                        android:id="@+id/maxpersonasEvento"
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        tools:text="20"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/segoe_ui_regular" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/botonUnirse"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            app:cardBackgroundColor="@color/green"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvBotonUnirse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="UNIRSE"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoe_ui_regular"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
