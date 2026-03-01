@@ -13,13 +13,20 @@ MiInstitutoApp aims to digitize and simplify key aspects of academic interaction
 
 The platform creates a centralized digital space where teachers and students can interact efficiently and productively.
 
-<p align="center">
-  <img styles="margin-right: 20px;" src="screenshots/Screenshot_20260301_231700.png" width="250"/>
+<p align="left">
+  <h2>Login</h2>
+  <img src="screenshots/Screenshot_20260301_231700.png" width="250"/>
+  <h2>Start</h2>
   <img src="screenshots/Screenshot_20260301_231846.png" width="250"/>
+  <h2>Games section</h2>
   <img src="screenshots/Screenshot_20260301_231859.png" width="250"/>
+  <h2>Activities section</h2>
   <img src="screenshots/Screenshot_20260301_231908.png" width="250"/>
+  <h2>Event creator section</h2>
   <img src="screenshots/Screenshot_20260301_231925.png" width="250"/>
+  <h2>Settings section</h2>
   <img src="screenshots/Screenshot_20260301_231948.png" width="250"/>
+  <h2>And more...</h2>
 </p>
 
 ---
