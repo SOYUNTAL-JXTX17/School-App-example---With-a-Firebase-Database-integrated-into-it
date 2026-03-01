@@ -1,7 +1,3 @@
-Here’s a professional **README.md** you can use for your GitHub repository:
-
----
-
 # 📚 MiInstitutoApp
 
 MiInstitutoApp, is a mobile application developed in **Kotlin** using the **Android Studio** framework.
@@ -64,7 +60,7 @@ The main goal of EduConnect is to:
 1. Clone the repository:
 
    ```bash
-   git clone [https://github.com/your-username/your-repository-name.git](https://github.com/SOYUNTAL-JXTX17/School-App-example---With-a-Firebase-Database-integrated-into-it.git
+   git clone https://github.com/SOYUNTAL-JXTX17/School-App-example---With-a-Firebase-Database-integrated-into-it.git
    ```
 2. Open the project in Android Studio.
 3. Build and run the application on an emulator or physical Android device.
@@ -90,7 +86,3 @@ Feel free to fork the repository, open issues, or submit pull requests.
 ## License
 
 This project is open-source and available under the MIT License.
-
----
-
-If you’d like, I can also make a more technical version (with architecture, dependencies, Firebase mention, MVVM pattern, etc.) for a more professional portfolio presentation.
