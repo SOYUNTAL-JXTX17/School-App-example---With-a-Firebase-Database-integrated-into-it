@@ -1,11 +1,14 @@
 package com.example.miinstitutoapp.juegosApartado.juegos.sudoku
 
 
+import android.content.SharedPreferences
+import android.content.res.Configuration
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.AppCompatButton
 import androidx.core.content.ContextCompat
 import androidx.core.view.WindowCompat
@@ -34,6 +37,10 @@ class PlaySudokuActivity : AppCompatActivity(), SudokuBoardView.OnTouchListener 
     private lateinit var nineButton: AppCompatButton
 
     private lateinit var backButton: LinearLayout
+
+    private lateinit var sharedPreferences: SharedPreferences
+    private var modoAnadido: Boolean = false
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -97,7 +104,20 @@ class PlaySudokuActivity : AppCompatActivity(), SudokuBoardView.OnTouchListener 
     }
 
     private fun updateNoteTakingUI(isNoteTaking: Boolean?) = isNoteTaking?.let {
-        val color = if (it) ContextCompat.getColor(this, R.color.colorPrimary) else Color.WHITE
+        val color = if (it) ContextCompat.getColor(this, R.color.colorPrimary)
+        else
+        {
+            sharedPreferences = getSharedPreferences("ajustes", MODE_PRIVATE)
+            modoAnadido = sharedPreferences.getBoolean("modoOscuro", false)
+
+            if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES
+                || (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES
+                || modoAnadido)
+            {
+                ContextCompat.getColor(this, R.color.white)
+            }
+            else ContextCompat.getColor(this, R.color.black)
+        }
         notesButton.setBackgroundColor(color)
     }
 
