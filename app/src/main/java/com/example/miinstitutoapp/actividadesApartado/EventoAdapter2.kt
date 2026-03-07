@@ -15,6 +15,7 @@ class EventoAdapter2(
     private val miUid: String?,
     private val onUnirseClick: (Evento) -> Unit,
     private val onBorrarClick: (Evento) -> Unit,
+    private val onEditarClick: (Evento) -> Unit,
     private val onVerParticipantesClick: (Evento) -> Unit) : RecyclerView.Adapter<EventoAdapter2.EventoViewHolder2>()
 {
 
@@ -35,6 +36,8 @@ class EventoAdapter2(
         val tvBotonUnirse: TextView = view.findViewById(R.id.tvBotonUnirse)
 
         val borrarEvento: CardView = view.findViewById(R.id.borrarEvento)
+
+        val editarEvento: CardView = view.findViewById(R.id.editarEvento)
 
         val participantesEvento: CardView = view.findViewById(R.id.participantesEvento)
     }
@@ -76,6 +79,10 @@ class EventoAdapter2(
 
         holder.borrarEvento.setOnClickListener {
             onBorrarClick(evento)
+        }
+
+        holder.editarEvento.setOnClickListener {
+            onEditarClick(evento)
         }
 
         holder.participantesEvento.setOnClickListener {

@@ -124,6 +124,11 @@ class ActividadesActivity : AppCompatActivity() {
                         .show(); return@EventoAdapter2
                 }
             },
+            onEditarClick = { evento ->
+                val intent = Intent(this, EditarEventoActivity::class.java)
+                intent.putExtra("eventoSeleccionadoId", evento.id)
+                startActivity(intent)
+            },
             onVerParticipantesClick = { evento ->
                 val intent = Intent(this, ParticipantesActivity::class.java)
                 intent.putExtra("eventoId", evento.id)

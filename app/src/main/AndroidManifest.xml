@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AlbasurGames.ActivityFullscreenNoCutout">
         <activity
+            android:name=".actividadesApartado.EditarEventoActivity"
+            android:exported="false" />
+        <activity
             android:name=".actividadesApartado.ParticipantesActivity"
             android:exported="false" />
         <activity

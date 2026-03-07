@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actividadesApartado.EditarEventoActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/inicio_bienvenida_background"
+            android:layout_marginBottom="20dp"
+            android:paddingHorizontal="32dp"
+            android:paddingBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom">
+
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_back"
+                    android:tint="?attr/textos"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text= "Editar evento"
+                android:gravity="bottom"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:textColor="?attr/textos"
+                android:textAlignment="center"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre del evento"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textSize="16sp"
+                    android:textColor="?attr/textos"/>
+
+                <EditText
+                    android:id="@+id/nombreEvento"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableTint="@color/colorTextBlack"
+                    android:fontFamily="@font/seg_ui_semibold"
+                    android:inputType="text"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorTextBlack"
+                    android:textColorHint="@color/colorPlaceholder" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripcion del evento"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textSize="16sp"
+                    android:textColor="?attr/textos"/>
+
+                <EditText
+                    android:id="@+id/descripcionEvento"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableTint="@color/colorTextBlack"
+                    android:fontFamily="@font/seg_ui_semibold"
+                    android:inputType="text"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorTextBlack"
+                    android:textColorHint="@color/colorPlaceholder" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha del evento"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textSize="16sp"
+                    android:textColor="?attr/textos"/>
+
+                <EditText
+                    android:id="@+id/fechaEvento"
+                    android:layout_width="200dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableTint="@color/colorTextBlack"
+                    android:fontFamily="@font/seg_ui_semibold"
+                    android:inputType="date"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorTextBlack"
+                    android:textColorHint="@color/colorPlaceholder" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Numero máximo de personas"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textSize="16sp"
+                    android:textColor="?attr/textos"/>
+
+                <EditText
+                    android:id="@+id/maxpersonasEvento"
+                    android:layout_width="100dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableTint="@color/colorTextBlack"
+                    android:fontFamily="@font/seg_ui_semibold"
+                    android:inputType="number"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorTextBlack"
+                    android:textColorHint="@color/colorPlaceholder" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Portada del evento"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textSize="16sp"
+                    android:textColor="?attr/textos"/>
+
+                <EditText
+                    android:id="@+id/imagenEvento"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableTint="@color/colorTextBlack"
+                    android:fontFamily="@font/seg_ui_semibold"
+                    android:inputType="text"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorTextBlack"
+                    android:textColorHint="@color/colorPlaceholder"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/subirImagenBoton"
+                    android:layout_width="150dp"
+                    android:layout_height="42dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button_background2"
+                    android:fontFamily="@font/seg_ui_semibold"
+                    android:text="Subir imagen"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorButtonText"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:scaleType="fitStart"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/editareventoButton"
+            android:layout_width="180dp"
+            android:layout_height="52dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/seg_ui_semibold"
+            android:text="Guardar cambios"
+            android:textAllCaps="false"
+            android:textColor="@color/colorButtonText"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+</LinearLayout>
